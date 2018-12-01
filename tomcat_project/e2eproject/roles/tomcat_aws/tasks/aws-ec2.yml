@@ -2,8 +2,8 @@
 - name: Create an ec2 instance
   ec2:
     key_name: "{{ keypair }}"
-    aws_access_key: "AKIAIA2POSCE3Z5GKAFQ"
-    aws_secret_key: "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"
+    aws_access_key: ""
+    aws_secret_key: ""
     group: AnsibleSG  # security group name
     instance_type: "{{ instance_type }}"
     image: "{{ ami }}"
@@ -14,7 +14,7 @@
       Name: "Demo"
     instance_tags:
       Name: "Demo"
-    vpc_subnet_id: "subnet-95d699fd"
+    vpc_subnet_id: ""
     assign_public_ip: yes
   register: ec2
     
